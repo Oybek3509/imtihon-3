@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css" />
+  <title></title>
+</head>
+
+<body style="font-family: 'Poppins', sans-serif;">
+  <!-- Navbar -->
+  <nav class="relative container mx-auto p-6">
+    <!-- Flex container -->
+    <div class="flex items-center justify-between">
+      <!-- Logo -->
+      <div class="pt-2">
+        <img src="./imgs/logo.svg" alt="" />
+      </div>
+      <!-- Menu Items -->
+      <div class="hidden space-x-6 md:flex">
+        <a href="#" class=" font-normal text-[18px] leading-[27px] hover:text-darkGrayishBlue">Home</a>
+        <a href="#" class="hover:text-darkGrayishBlue">Features</a>
+        <a href="#" class="hover:text-darkGrayishBlue">About App</a>
+      </div>
+      <!-- Button -->
+      <a href="#"
+        class="hidden p-3 px-6 pt-2 text-white bg-[#2D76F9] rounded-full  hover:bg-[#24da] md:block">About App</a>
+
+      <!-- Hamburger Icon -->
+      <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+        <span class="hamburger-top"></span>
+        <span class="hamburger-middle"></span>
+        <span class="hamburger-bottom"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="md:hidden">
+      <div id="menu"
+        class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+        <a href="#">Home</a>
+        <a href="#">Features</a>
+        <a href="#">About App</a>
+    
+      </div>
+    </div>
+  </nav>
+
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
